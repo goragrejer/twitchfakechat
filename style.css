@@ -1,0 +1,109 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 350px;
+    height: 600px;
+    background-color: #18181b; /* Twitch dark grey */
+    color: #efeff1; /* Twitch light text */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    padding: 16px;
+    background-color: #0e0e10; /* Darker header */
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid #2d2d2f;
+}
+
+/* Message Area */
+.chat-messages {
+    flex-grow: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Scrollbar (optional, but nice) */
+.chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: #464649;
+    border-radius: 4px;
+}
+.chat-messages::-webkit-scrollbar-track {
+    background-color: #1f1f23;
+}
+
+/* Individual Message */
+.message {
+    line-height: 1.5;
+    word-wrap: break-word; /* Prevents long words from overflowing */
+}
+
+.message .username {
+    font-weight: 700;
+    margin-right: 6px;
+    /* Color will be set by JS */
+}
+
+/* Chat Input Form */
+.chat-input-form {
+    display: flex;
+    padding: 16px;
+    background-color: #0e0e10;
+    border-top: 1px solid #2d2d2f;
+}
+
+#message-input {
+    flex-grow: 1;
+    border: 1px solid #3a3a3d;
+    background-color: #3a3a3d;
+    color: #efeff1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#message-input:focus {
+    outline: none;
+    border-color: #9147ff; /* Twitch purple */
+}
+
+.send-button {
+    background-color: #9147ff; /* Twitch purple */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-left: 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.send-button:hover {
+    background-color: #772ce8; /* Darker purple */
+}
