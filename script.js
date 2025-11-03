@@ -83,9 +83,27 @@ setTimeout(() => {
 }, 1000);
 
 setTimeout(() => {
-    addMessage('CoolUser123', 'Hey everyone! This stream is awesome!');
+    addMessage('GOODBOI', 'You are sooo cooked');
 }, 2500);
 
 setTimeout(() => {
-    addMessage('GamerPro', 'What game is next?');
+    addMessage('GamerPro', 'Just get good or actually get out stop playing games dumbass');
 }, 4000);
+
+    addMessage('StreamBot', 'Welcome to the chat! Remember to be kind OR NOT SINCE THIS GUY IS A DUMBASS.');
+}, 4500);
+
+setTimeout(() => {
+    addMessage('Dipshit67', 'GET OUT you are trash');
+}, 5600);
+
+setTimeout(() => {
+    addMessage('GamerPro', 'YOU ARE COOKED');
+}, 6500);
+
+setTimeout(() => {
+    addMessage('GamerPro', '/BOT VOTE Is this guy trash or not 1:YES 2:NO');
+}, 7000);
+
+addMessage('StreamBot', 'Vote Done majority says YES THIS GUY IS A FUCKING DUMBASS');
+}, 9000);
